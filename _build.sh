@@ -4,7 +4,7 @@ cd /srv/smcroute
 
 ./autogen.sh
 
-CC=/usr/bin/arm-linux-gnueabihf-gcc ./configure --host=arm --prefix=/srv/install/
+CC=/usr/bin/arm-linux-gnueabihf-gcc ./configure --host=arm --prefix=/
 
 CC=/usr/bin/arm-linux-gnueabihf-gcc make
 

@@ -22,6 +22,10 @@ docker exec -it ${TAG} /srv/_build.sh
 
 rm -fr install
 
-docker cp ${TAG}:/srv/install install
+mkdir -p install/sbin
+
+docker cp ${TAG}:/sbin/smcroute install/sbin/smcroute
+docker cp ${TAG}:/sbin/smcroutectl install/sbin/smcroutectl
+docker cp ${TAG}:/sbin/smcrouted install/sbin/smcrouted
 
 docker rm -f ${TAG}
